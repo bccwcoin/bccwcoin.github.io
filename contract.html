@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0,viewport-fit=cover,shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link href="cssfont/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css?v=23">
+    <title>创链天下</title>
+    <style>
+        body{position: relative;}
+        .ContractOut {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 20px;
+            right:20px
+        }
+        ul.listShow{padding: 0;margin: 0;list-style: none;border-left: 1px solid #ff6c24;border-top: 1px solid #ff6c24;height: auto;overflow: hidden}
+        ul.listShow li {
+            margin: 0;padding: 0;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            width: 33.3%;
+            float: left;
+            border-right: 1px solid #ff6c24;
+            border-bottom: 1px solid #ff6c24;
+            height: 105px;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+        }
+        ul.listShow li img {
+            width: 25px;
+            margin-bottom:10px
+        }
+        ul.listShow li p{
+            padding: 0;margin: 0;
+            background-color: #ff6c24;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: none;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            text-decoration: underline;}
+        ul.listShow li:hover p{display: flex}
+    </style>
+</head>
+<body>
+<a href="index.html"><img class="ContractOut" src="images/out.png" /></a>
+<div class="container text-center">
+    <img src="images/shoupingLogo.png?v1" style="width: 72px;margin-top: 20px;">
+    <div class="clearfix"></div>
+    <img src="images/ethTextEn.png?v1" style="margin-top: 20px;width: 128px;">
+</div>
+<div class="container mt-5 mb-4">
+    <div class="text-center">
+        <div class="boxTitle">
+            <span i18n="link.contract">合约介绍</span>
+            <div class="titleLine"></div>
+        </div>
+    </div>
+</div>
+<ul class="listShow">
+  <li><img src="./images/ContractImg01.png"/><span>BCCW代币合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg02.png"/><span>补偿合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg03.png"/><span>图灵算法</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg04.png"/><span>统计信息合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg05.png"/><span>代币合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg06.png"/><span>共振合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg07.png"/><span>大奖金池合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg08.png"/><span>手续费计算合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg09.png"/><span>关系合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg10.png"/><span>小奖金池合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg11.png"/><span>玩家身份合约</span><p>点击查看</p></li>
+  <li><img src="./images/ContractImg12.png"/><span>销毁地址</span><p>点击查看</p></li>
+</ul>
+<div class="clearfix mb-4"></div>
+<style>
+    .contractInfo{display: none}
+    .contract{color: #fff;text-align: center;border-radius: 7px;
+        border: 1px solid #ff6c24;
+        background-color: #160237;
+        position: relative;font-size: 12px;padding: 10px;box-sizing:border-box;overflow: hidden;}
+    .contract ul{ text-align: left;
+                     display: -webkit-box;
+                     display: flex;
+                     -webkit-box-orient: vertical;
+                     -webkit-box-direction: normal;
+                     flex-direction: column;
+                     -webkit-box-align: center;
+                     align-items: center;margin: 0;padding: 0;
+                 }
+    .contract ul li{width: 100%;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        display: flex;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;}
+    .contract ul>li>span:first-child {
+        width: 130px;
+    }
+    .contract ul>li>span:last-child {padding-left: 10px;word-wrap:break-word}
+    a.button {
+        background: #ca149e;
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        font-size: 16px;
+        margin-top: 30px;
+        display: inline-block;
+        padding: 5px;
+    }
+</style>
+<div class="contractInfo">
+    <div>
+        <p>BCCW代币合约</p>
+        <p>采用ethereum - ERC20 标准代币协议，主要功能包括记录，查询，转账等标准ERC20协议等功能</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0x198a512971a7064a942084fddff5608f66b377a582c71b0cfd58c8e386f3651d</span></li>
+            <li><span>Blocks:</span><span>4</span></li>
+            <li><span>Seconds:</span><span>80</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x9fc7df14414056d041ffae9747ffdfb99d7ba768</span></li>
+            <li><span>block number:</span><span>9790721 </span></li>
+            <li><span>block timestamp:</span><span>1564742769</span></li>
+            <li><span>account:</span><span>0x15f0956befe5c63e2561a448c5e41a35af5d47fb</span></li>
+            <li><span>gas used:</span><span>669979</span></li>
+            <li><span>gas price:</span><span>6 gwei</span></li>
+            <li><span>value sent:</span><span>0.1 ETH</span></li>
+            <li><span>total cost:</span><span>0.004019874 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>补偿合约</p>
+        <p>在当轮游戏结束后，合约对亏损玩家补偿对应额度EPK。</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0x6a11719178fa2872353909d9171567d49129aca898c49a9cfc6c2bd3ffc85166</span></li>
+            <li><span>Blocks:</span><span>3</span></li>
+            <li><span>Seconds:</span><span>44</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x4E4877EefA9bbF78b0a5cA2482cB8F558638DB7B</span></li>
+            <li><span>block number:</span><span>8593176</span></li>
+            <li><span>block timestamp:</span><span>1569076584</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>1117859</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.038007206 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>图灵算法</p>
+        <p>图灵算法为创链天下独创的机密算法，每日分红比例、入场额度、参与额度、幸运池比例等，皆受图灵算法影响；预警线是图灵算法里的核心控制功能之一，当项目运行到可能会出现系统性风险时，预警线会做出提示，并且会根据预警线的风险程度自动折扣玩家领取收益的到账额度。</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0x9bfd09eed0559598f756ded618d358b6351cd0c7fb224ca52af55d31e87e6ff6</span></li>
+            <li><span>Blocks:</span><span>1</span></li>
+            <li><span>Seconds:</span><span>16</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x1bbbbBF73cF7c97918cdE3ce46016c02D6F60B68</span></li>
+            <li><span>block number:</span><span>9131196</span></li>
+            <li><span>block timestamp:</span><span>1576768604</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>1899928</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.064597552 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>统计合约</p>
+        <p>用户记录统计信息，比如全网用户参与数量，次数等</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0x9a5c2a9906296cfd1677de4492e0774dff1e50ffc468220ee0343f9c286c8af9</span></li>
+            <li><span>Blocks:</span><span>1</span></li>
+            <li><span>Seconds:</span><span>16</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0xEe62700ba9358B1D3DbAF6C27644FCd18019241f</span></li>
+            <li><span>block number:</span><span>9131194</span></li>
+            <li><span>block timestamp:</span><span>1576768573</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>741837</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.025222458 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>轮次控制合约</p>
+        <p>开启默认轮次功能，在旧轮崩溃后，开启新轮次等功能，注意“Round”合约由此合约部署，并且正确配置合约之间的调用权限等</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0xd5c2cfadca3bc0bf7bc6e92c09057d498c04025f447a52c14ed3236408a2cf2a</span></li>
+            <li><span>Blocks:</span><span>0</span></li>
+            <li><span>Seconds:</span><span>72</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x9C1342c1708B5708865a2801fc96d966baD67210</span></li>
+            <li><span>block number:</span><span>9131197</span></li>
+            <li><span>block timestamp:</span><span>1576768610</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>5347154</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.181803236 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>共振合约</p>
+        <p>用于处理共振交易，总计6轮，从1-6，若当前轮次被兑换完，则自动开启下一轮兑换</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0xd967345954aa0ef610a6e8c702cd08fa058b1c55bab8575dd847c327ca476e82</span></li>
+            <li><span>Blocks:</span><span>1</span></li>
+            <li><span>Seconds:</span><span>12</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0xf2464DD69B84e3E066E97a0bA2190c8344455b77</span></li>
+            <li><span>block number:</span><span>8593158</span></li>
+            <li><span>block timestamp:</span><span>1569076314</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>1402748</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.047693432 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>大奖池合约</p>
+        <p>玩家参与的ETH7%（逐级递减）进入大奖池：倒计时36小时，每参加1ETH，增加1小时，最高增加至36小时，倒计时结束，则开奖，从后往前分配大奖；幸运大奖池开奖后，领奖时间为7天，领奖时间内游戏暂停。</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0xb802b713c07a6a22ceebc09bad6d8dfc231b3b3987da071da042f1cd4a49997e</span></li>
+            <li><span>Blocks:</span><span>1</span></li>
+            <li><span>Seconds:</span><span>8</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x26db2eA3E57DAF7628D4C2061654BA629AFF79ba</span></li>
+            <li><span>block number:</span><span>9131191</span></li>
+            <li><span>block timestamp:</span><span>1576768549</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>1693506</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.057579204 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>手续费计算合约</p>
+        <p>每当某个地址合法从合约提取Ether时，会产生一定比例的手续费，本合约用于保存当前手续费比例以及给出计算结果</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0x3d36d07ba78741de271afa7522cc2d779f243c8b7061c175c9097dbd118f22c3</span></li>
+            <li><span>Blocks:</span><span>0</span></li>
+            <li><span>Seconds:</span><span>32</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x2d3D35EBD20CaeF1DEcdb70a02DE1c9C16233ae7</span></li>
+            <li><span>block number:</span><span>9131186</span></li>
+            <li><span>block timestamp:</span><span>1576768480</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>588104</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.019995536 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>关系合约</p>
+        <p>记录用户之间的推荐关系，包括绑定推荐关系，申请邀请码，邀请码和地址之间互相转换等功能</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0x31ddc8a2ce404699826262f4a183c6ed0fc6bb096ef35e97e25eea20d219d8c5</span></li>
+            <li><span>Blocks:</span><span>1</span></li>
+            <li><span>Seconds:</span><span>52</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x8F36a0B0b8FDbBa7BCB6fE00D8d6747144cBCc1a</span></li>
+            <li><span>block number:</span><span>8593165</span></li>
+            <li><span>block timestamp:</span><span>1569076374</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>2458047</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.083573598 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>小奖池合约</p>
+        <p>小奖池每天开奖一次，随机从当日参与额度不小于20ETH的玩家里抽取出5名幸运玩家，由中奖幸运玩家平均分配，若当日参与20ETH以上的玩家不足5人，则由实际人数平均分配。</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0xdcfb68483cc2a4f4fdac6f6b3f12e15ffc4191b4ec682cd8de0ad43a231307de</span></li>
+            <li><span>Blocks:</span><span>1</span></li>
+            <li><span>Seconds:</span><span>16</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0x9bF9A32BD22b95013E5F555619314302827a3b19</span></li>
+            <li><span>block number:</span><span>9131192</span></li>
+            <li><span>block timestamp:</span><span>1576768553</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>1360776</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.046266384 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>玩家身份合约</p>
+        <p>记录用户等级，升级操作，升级判断，以及部分收益计算等功能。</p>
+        <ul>
+            <li><span>transaction hash:</span><span>0x581b5bf01c21d849e89f25d5cf13fff0f4f5c368551131a2a919133ac03075b6</span></li>
+            <li><span>Blocks:</span><span>1</span></li>
+            <li><span>Seconds:</span><span>20</span></li>
+            <li><span>contract address:</span><span class="ContractAddress">0xbDCEa890F427f6864fE793bd465d5dD5AA9E4598</span></li>
+            <li><span>block number:</span><span>9131188</span></li>
+            <li><span>block timestamp:</span><span>1576768529</span></li>
+            <li><span>account:</span><span>0x04d0a59721801a297e71ee95494a97c51bdcbe14</span></li>
+            <li><span>gas used:</span><span>2722931</span></li>
+            <li><span>gas price:</span><span>34 gwei</span></li>
+            <li><span>value sent:</span><span>0 ETH</span></li>
+            <li><span>total cost:</span><span>0.092579654 ETH</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+    <div>
+        <p>BCCW销毁合约</p>
+        <ul>
+            <li style="margin-top: 25px;"><span>contract address:</span><span class="ContractAddress">0x0000000000000000000000000000000000000000</span></li>
+        </ul>
+        <a class="button">前往Etherscan查看</a>
+    </div>
+</div>
+<script src="js/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+<script src="js/layer/layer.js"></script>
+<script>
+    $('.listShow>li').on('click', function () {
+        let index = $(".listShow li").index($(this)[0]);
+        let obj = $(".contractInfo > div").eq(index);
+        obj.find('a.button').attr('href', 'https://cn.etherscan.com/address/' + obj.find('.ContractAddress').html());
+        layer.open({
+            type: 1
+            ,title: false
+            ,closeBtn: true
+            ,area: '90%;'
+            ,shade: 0.8
+            ,id: 'contract'
+            ,resize: false
+            ,moveType: 1
+            ,content: '<div class="contract">'+obj.html()+'</div>'
+        });
+    });
+</script>
+</body>
+</html>
