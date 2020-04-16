@@ -7,7 +7,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link href="cssfont/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css?v=32">
+    <link rel="stylesheet" href="css/index.css?v=33">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <title>创链天下(Create chain world)-BCCW</title>
 </head>
 <body>
@@ -405,14 +406,52 @@
         </div>
     </div>
 </div>
-<div class="container mt-5 mb-3" style="display: none">
+<div class="container mt-5 mb-3">
     <div class="text-center">
         <div class="boxTitle">
             <span i18n="menu.statistics">数据统计</span>
             <div class="titleLine"></div>
         </div>
     </div>
-
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="dataSource">
+                    <img src="images/circle1.png">
+                    <div class="indicator0">0</div>
+                </div>
+                <p>小奖池ETH</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="dataSource">
+                    <img src="images/circle2.png">
+                    <div class="indicator1"><span class="a">00</span>:<span class="b">00</span></div>
+                </div>
+                <p>幸运池倒计时</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="dataSource">
+                    <img src="images/circle3.png">
+                    <div class="indicator2">0</div>
+                </div>
+                <p>当前兑换比例</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="dataSource">
+                    <img src="images/circle4.png">
+                    <div class="indicator3">0</div>
+                </div>
+                <p>累计燃烧BCCW</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="dataSource">
+                    <img src="images/circle5.png">
+                    <div class="indicator4">0</div>
+                </div>
+                <p>大奖池ETH</p>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="container mt-5 mb-3">
     <div class="text-center">
@@ -480,9 +519,11 @@
 <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 <script src="clipboard.js-2.0.6/clipboard.min.js"></script>
 <script src="js/web3.min.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/truffle-contract.js"></script>
 <script src="js/layer/layer.js"></script>
 <script src="js/jquery.i18n.min.js"></script>
-<script src="js/index.js?v=9"></script>
+<script src="js/radialIndicator.js"></script>
+<script src="js/index.js?v=27"></script>
 </body>
 </html>
